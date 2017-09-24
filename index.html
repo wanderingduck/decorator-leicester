@@ -5,24 +5,24 @@
 	<script>
     var themeHasJQuery = !!window.jQuery;
 </script>
-<script type="text/javascript" src="./assets/js/jquery.js?1.0.689"></script>
+<script type="text/javascript" src="./assets/js/jquery.js?1.0.710"></script>
 <script>
     window._$ = jQuery.noConflict(themeHasJQuery);
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./assets/css/bootstrap.css?1.0.689" media="screen" />
-<script type="text/javascript" src="./assets/js/bootstrap.min.js?1.0.689"></script>
+<link rel="stylesheet" href="./assets/css/bootstrap.css?1.0.710" media="screen" />
+<script type="text/javascript" src="./assets/js/bootstrap.min.js?1.0.710"></script>
 <!--[if lte IE 9]>
-<link rel="stylesheet" href="./assets/css/layout.ie.css?1.0.689">
-<script src="./assets/js/layout.ie.js?1.0.689"></script>
+<link rel="stylesheet" href="./assets/css/layout.ie.css?1.0.710">
+<script src="./assets/js/layout.ie.js?1.0.710"></script>
 <![endif]-->
 <link class="" href='//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic|Coming+Soon:regular&subset=latin' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="./assets/js/layout.core.js"></script>
-<script src="./assets/js/CloudZoom.js?1.0.689"></script>
+<script src="./assets/js/CloudZoom.js?1.0.710"></script>
 	
     <title>Home | Decorator Leicester</title>
-	<link rel="stylesheet" href="./assets/css/style.css?1.0.689">
-	<script src="./assets/js/script.js?1.0.689"></script>
+	<link rel="stylesheet" href="./assets/css/style.css?1.0.710">
+	<script src="./assets/js/script.js?1.0.710"></script>
     <meta charset="utf-8">
     
     
@@ -162,12 +162,19 @@
  name="decorator-leicester-contact" method="post">
     <div class="bd-container-inner">
         <div class="container-fluid">
-            <div class=" bd-input-2 form-group">
+            <div class=" bd-customhtml-2 bd-tagstyles">
+    <div class="bd-container-inner bd-content-element">
+        <input type="hidden" name="_subject" value="Decorator Request Form">
+    </div>
+</div>
+	
+		<div class=" bd-input-2 form-group">
     <label class="bd-form-label">Full Name</label>
     
 
     <input type="text" class="bd-form-input"
- placeholder="Full Name" >
+ placeholder="Full Name"
+ name="name" >
 
     
 </div>
@@ -176,8 +183,9 @@
     <label class="bd-form-label">Phone Number</label>
     
 
-    <input type="text" class="bd-form-input"
- placeholder="Phone Number" >
+    <input type="number" class="bd-form-input"
+ placeholder="Phone Number"
+ name="phone" >
 
     
 </div>
@@ -186,34 +194,43 @@
     <label class="bd-form-label">Email Address</label>
     
 
-    <input type="text" class="bd-form-input"
- placeholder="Email Address" >
+    <input type="email" class="bd-form-input"
+ placeholder="Email Address"
+ name="email" >
 
     
 </div>
 	
-		<div class=" bd-radiobutton-2 form-group">
+		<div class=" bd-select-2 form-group">
+    <label class="bd-form-label">Job Type</label>
     
     
-        
 
+    <select class="bd-form-input"
+ title="Job Type"
+ name="jobtype">
         
-            
-            <div class="bd-form-radiobutton radio-inline">
-                <input type="radio" id="form-radio-20" value="Domestic/Residential">
-                <label for="form-radio-20" class="bd-form-radiobutton-label">Domestic/Residential</label>
-            </div>
-            
-            <div class="bd-form-radiobutton radio-inline">
-                <input type="radio" id="form-radio-22" value="Commercial/Industrial">
-                <label for="form-radio-22" class="bd-form-radiobutton-label">Commercial/Industrial</label>
-            </div>
+            <option value="Domestic/Residential">Domestic/Residential</option>
+            <option value="Commercial/Industrial">Commercial/Industrial</option>
+    </select>
 
-        
+    
+</div>
+	
+		<div class=" bd-customhtml-5 bd-tagstyles">
+    <div class="bd-container-inner bd-content-element">
+        <input type="text" name="_gotcha" style="display:none">
+    </div>
+</div>
+	
+		<div class=" bd-customhtml-3 bd-tagstyles">
+    <div class="bd-container-inner bd-content-element">
+        <input type="hidden" name="_next" value="//decoratorleicester.com/thank-you">
+    </div>
 </div>
 	
 		<a 
- onclick="jQuery(this).closest('form').submit();" href="#" class="bd-linkbutton-2  bd-button  bd-own-margins bd-content-element"    >
+ onclick="jQuery(this).closest('form').submit();" href="#" class="bd-linkbutton-2  bd-button-12  bd-own-margins bd-content-element"    >
     Send
 </a>
         </div>
@@ -224,7 +241,7 @@
 		<div class=" bd-columnwrapper-17 
  col-sm-6">
     <div class="bd-layoutcolumn-17 bd-column" ><div class="bd-vertical-align-wrapper"><ul class=" bd-textblock-11 bd-content-element">
-    <li>Experienced Decorators<br></li><li>Professional &amp; trustworthy<br></li><li>Fully insured &amp; qualified</li><li>Competitive rates</li><li>High quality materials</li><li>Commercial &amp; domestic services</li>
+    <li>Experienced decorators<br></li><li>Professional &amp; trustworthy<br></li><li>Fully insured &amp; qualified</li><li>Competitive rates</li><li>High quality materials</li><li>Commercial &amp; domestic services</li>
 </ul></div></div>
 </div>
             </div>
@@ -244,22 +261,26 @@
             <div class="row ">
                 <div class=" bd-columnwrapper-63 
  col-sm-3">
-    <div class="bd-layoutcolumn-63 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-6 bd-own-margins bd-imagestyles   "  src="./assets/images/1fd709fbe5b64a0b4ad29ba0bc97236e_P1011328.JPG"></div></div>
+    <div class="bd-layoutcolumn-63 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-6 bd-own-margins bd-imagestyles   "  src="./assets/images/94dfd843dfad3ae4bb1bc14930346eff_P1011328.JPG"
+ alt="Painted banister inside a Leicester house"></div></div>
 </div>
 	
 		<div class=" bd-columnwrapper-64 
  col-sm-3">
-    <div class="bd-layoutcolumn-64 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-8 bd-own-margins bd-imagestyles   "  src="./assets/images/91ce11463ef610ee6919709b5755c699_P1011332.JPG"></div></div>
+    <div class="bd-layoutcolumn-64 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-8 bd-own-margins bd-imagestyles   "  src="./assets/images/82ea457a5a581f47edbf8d335c4dd6ab_P1011332.JPG"
+ alt="Recently wallpapered living room in a Leicester house "></div></div>
 </div>
 	
 		<div class=" bd-columnwrapper-6 
  col-sm-3">
-    <div class="bd-layoutcolumn-6 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-1 bd-own-margins bd-imagestyles   "  src="./assets/images/57adbfb38c3bbd0c7265b7821b68a85e_P1011400.JPG"></div></div>
+    <div class="bd-layoutcolumn-6 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-1 bd-own-margins bd-imagestyles   "  src="./assets/images/57adbfb38c3bbd0c7265b7821b68a85e_P1011400.JPG"
+ alt="Exterior paintwork on a Leicester House"></div></div>
 </div>
 	
 		<div class=" bd-columnwrapper-10 
  col-sm-3">
-    <div class="bd-layoutcolumn-10 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-2 bd-own-margins bd-imagestyles   "  src="./assets/images/e1f6a634440383b4b3fa379a0a9e433a_P1011397.JPG"></div></div>
+    <div class="bd-layoutcolumn-10 bd-column" ><div class="bd-vertical-align-wrapper"><img class="bd-imagelink-2 bd-own-margins bd-imagestyles   "  src="./assets/images/e1f6a634440383b4b3fa379a0a9e433a_P1011397.JPG"
+ alt="Beautifully painted Leicester house"></div></div>
 </div>
             </div>
         </div>
