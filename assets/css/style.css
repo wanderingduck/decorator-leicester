@@ -12332,7 +12332,7 @@ html[dir="ltr"] [data-responsive-menu="false"] .bd-horizontalmenu-2 .bd-menuitem
 }
 @media (max-width: 767px) {
   .bd-logo-3 {
-    height: 30px;
+    height: 100px;
   }
 }
 .bd-logo-3 img {
